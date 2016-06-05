@@ -12,6 +12,12 @@ def me(request):
     # send_mail('CONTACT PAGE SEARCHED', 'HELLLO .', 'sarthak221995@gmail.com',['sarthak221995@gmail.com'], fail_silently=False)
     return render(request, 'home/me.html', {})
 
+
+def ds(request):
+    return render(request, 'home/ds.html', {})
+
+
+
 def mee(request):
     email = request.POST.get('email')
     message = request.POST.get('message')
