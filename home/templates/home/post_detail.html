@@ -77,17 +77,17 @@
 
 
 
-                    <div class="post-heading" style = "height:550px">
+                    <div class="post-heading" style = "height:600px">
                         <h1>{{post.title}}</h1>
                         <h2 class="subheading">{{post.text}}</h2>
-                        <span class="meta">Posted by <a href="#">Posted by &nbsp;<b>{{post.author}}</b>&nbsp; on {{post.created}}></a></span>
+                        <span class="meta"><p>Posted by &nbsp;<b>{{post.author}}</b>&nbsp; on {{post.created}}></p></span>
 
     <br>
 
                     <ul class="list-inline text-left">
                         <h4 style = "color:#eee">SHARE ME ON :</h4>
 
-<br>
+<hr>
 <h2>
     <div class="fb-like" data-href="{{request.build_absolute_uri}}" data-width="100%" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
  <a href="https://www.facebook.com/sharer/sharer.php?u={{request.build_absolute_uri}}">
